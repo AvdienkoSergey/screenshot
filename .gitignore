@@ -1,0 +1,73 @@
+# Директории сборки
+/target/
+/debug/
+/release/
+
+# Кэш и временные файлы
+**/*.rs.bk
+**/*.rs.swp
+**/*.rs.swo
+**/*.swp
+**/*.swo
+**/*~
+
+# Cargo и зависимости
+/.cargo/
+/Cargo.lock
+
+# Файлы IDE и редакторов
+.idea/
+.vscode/
+*.iml
+
+# Файлы отладки и логов
+*.log
+*.out
+*.err
+*.dSYM/
+*.profdata
+*.profraw
+
+# Бэкапы
+*.bak
+*.bkp
+
+# Сборочные артефакты и бинарные файлы
+*.rlib
+*.d
+*.o
+*.so
+*.a
+*.dll
+*.dylib
+*.exe
+*.bin
+*.lib
+
+# Среда выполнения и переменные окружения
+.env
+.env.*
+
+# Системные файлы и кэш
+.DS_Store
+Thumbs.db
+
+# Расширения для тестов и документации
+/tests/
+/doc/
+
+# Файлы покрытия кода
+/coverage/
+*.gcda
+*.gcno
+
+# Logs и отчетность
+/logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Файлы сборки из других инструментов
+/target/
+/dist/

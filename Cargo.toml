@@ -1,0 +1,21 @@
+[package]
+name = "screenshots"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+screenshots = "0.8.10"
+image = "0.25.2"
+winapi = { version = "0.3", features = ["winbase", "wincon"] }
+chrono = "0.4.39"
+
+[profile.release]
+lto = true  # Используйте оптимизацию для релиза
+panic = "abort"  # Уменьшите размер исполняемого файла
+
+[profile.dev]
+panic = "abort"
+
+[[bin]]
+name = "screenshot"  # Имя исполняемого файла
+path = "src/main.rs"  # Путь к вашему файлу с кодом
